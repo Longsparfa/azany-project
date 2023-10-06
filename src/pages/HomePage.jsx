@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "../components/slider/Slider";
 import Card from "../components/Card";
 import {
+  bags,
   camera,
   cosmetic,
   dress,
@@ -13,15 +14,13 @@ import {
   shopWithCon,
   watch,
 } from "../assets";
-import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
     <>
-      <div className="bg-[#626a6b]">
+      <div className="bg-white">
         <div className="w-full h-screen m-auto ">
-          <Header />
           <Slider />
           <div className="grid grid-cols-2 lg:grid-cols-4 ">
             <Card
@@ -45,7 +44,7 @@ const HomePage = () => {
               link={"See terms and conditon"}
             />
             <Card
-              img={gaming}
+              img={bags}
               title={"We have a surprise for you"}
               link={"See terms and conditon"}
             />

@@ -3,7 +3,7 @@ import React from "react";
 const Card = ({ img, title, link }) => {
   return (
     <>
-      <div className="h-[420px] bg-white  ">
+      <div className="h-[420px] shadow-lg bg-white z-30 m-3  ">
         <h1 className="text-lg lg:text-xl font-semibold ml-4 mt-4 ">{title}</h1>
 
         <div className="h-[300px] m-4 ">

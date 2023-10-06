@@ -4,9 +4,10 @@ import { BiSearch } from "react-icons/bi";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { logo } from "../assets";
 import Toggle from "./Toggle";
+import Search from "./Search";
 
 const cart = (
-  <span className="flex text-2xl text-[#242424] relative">
+  <span className="flex font-bold text-2xl text-[#242424] relative">
     Cart
     <FaShoppingCart size={30} className="text-[#242424] " />
     <p className="text-[#ffff] bg-[#c41805] absolute top-[-1rem] right-[-1rem] font-medium">
@@ -18,9 +19,35 @@ const cart = (
 const Header = () => {
   return (
     <>
-      <header>
-        <div className="bg-white w-[100%] h-[12rem] max-w-[1000px] mx-auto p-[1rem] flex justify-around items-center relative">
-          <img src={logo} alt="" className="w-[25%] " />
+      <header className="min-w-[1000px]">
+        <div className="bg-white h-[50px] flex items-center ">
+          <div className="flex items-center m-4">
+            <img src={logo} alt="" className="h-[35px] w-[100%] m-2 " />
+            <div className="pr-4 pl-4">
+              <div className="text-xl text-[#242424]">Delivered to</div>
+              <div className="text-sm lg:text-base font-bold text-[#242424]">
+                Nigeria
+              </div>
+            </div>
+          </div>
+          <div className="flex grow relative itmes-center">
+            <Search />
+          </div>
+          <div className="flex items-center m-4">
+            <div className="pr-4 pl-4">
+              <div className="text-xl text-[#242424]">welcome, sign in</div>
+              <div className="text-sm lg:text-base font-bold text-[#242424]">
+                Accounts and Lists
+              </div>
+            </div>
+            <div className="pr-4 pl-4">
+              <div className="text-xl text-[#242424]">Returns</div>
+              <div className="text-sm lg:text-base font-bold text-[#242424]">
+                & Orders
+              </div>
+            </div>
+            <div className="flex px-3">{cart}</div>
+          </div>
           <div className="flex flex-col max-w-[220px] w-[100%] justify-center items-center ">
             <h4 className="not-italic font-semibold lg:text-[12px] lg:leading-[24px] uppercase text-[rgba(255, 255, 255, 0.4)] mb- text-sm  ">
               Call <span className="text-[#c41805] ">to</span> order
@@ -32,7 +59,6 @@ const Header = () => {
               +342-4783-2838
             </a>
           </div>
-          {cart}
         </div>
         <div className="flex justify-between bg-[#1c0b1e] h-[8rem] ">
           <div className="hidden lg:flex justify-center items-center p-4">
