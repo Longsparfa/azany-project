@@ -1,5 +1,6 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Slider from "./components/slider/Slider";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <div className=" ">
         <Header />
         <main className="bg-[#626a6b] ">
-          <div>Main</div>
+          <Slider />
         </main>
         <Footer />
       </div>
