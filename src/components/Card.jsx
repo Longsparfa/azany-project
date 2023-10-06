@@ -1,18 +1,19 @@
 import React from "react";
 
-const Card = ({ src, title }) => {
+const Card = ({ img, title, link }) => {
   return (
     <>
-      <div className="flex ">
-        <div className="w-[100%] h-full mx-2 bg-gray-300 rounded-lg overflow-hidden shadow-lg">
-          <img src={src} alt="" className=" w-[100%] h-[100%] " />
-          <div className="flex justify-between px-2">
-            <h1 className="text-sm">{title}</h1>
-            <div className="flex">
-              <img src="" alt="" className="" />
-              <img src="" alt="" className="ml-4 " />
-            </div>
-          </div>
+      <div className="h-[420px] bg-white  ">
+        <h1 className="text-lg lg:text-xl font-semibold ml-4 mt-4 ">{title}</h1>
+
+        <div className="h-[300px] m-4 ">
+          <img src={img} alt="" className="h-[100%] w-[100%] object-cover " />
+        </div>
+
+        <div>
+          <a href="#" className="text-xs sm:text-sm lg:text-lg ml-4 text-blue-400 ">
+            {link}
+          </a>
         </div>
       </div>
     </>
