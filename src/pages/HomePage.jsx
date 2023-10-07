@@ -73,7 +73,7 @@ const HomePage = () => {
               />
             </div>
           </section>
-          <section className="bg-[#1c0b1e] mb-10 p-20 min-h-[1000px] ">
+          <section className="bg-[#c41805] mb-10 p-20 min-h-[1000px] ">
             <div className="flex justify-between items-center px-2 pb-10 ">
               <p className="text-xl text-white lg:text-2xl ">Exclusive Deals</p>
               <p className="text-xl text-white lg:text-2xl uppercase">
@@ -164,7 +164,7 @@ const HomePage = () => {
             </div>
           </section>
           <div className="">
-            <section className="bg-[#1c0b1e] mb-10 p-20 min-h-[1000px] ">
+            <section className="bg-[#c41805] mb-10 p-20 min-h-[1000px] ">
               <div className="flex justify-between items-center px-2 pb-10 ">
                 <p className="text-xl text-white lg:text-2xl ">
                   Exclusive Deals
